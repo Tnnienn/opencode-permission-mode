@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Dynamically switch opencode's permission mode at runtime — free, cautious, locked, or ask — without touching config files.",
   "author": "Antonio Fasanella <fasanella.antonio.sanfele@gmail.com>",
-  "license": "GPL-3.0-only",
+  "license": "MIT",
   "keywords": ["opencode", "plugin", "permissions", "security", "mode"],
   "main": "./dist/index.js",
   "exports": {
