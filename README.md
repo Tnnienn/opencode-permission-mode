@@ -37,16 +37,30 @@ The mode is persisted to `~/.config/opencode/permission-mode.json` so it survive
 npm install -g opencode-permission-mode
 ```
 
-Or clone and link manually:
+Or install from npm:
 
 ```bash
-git clone https://github.com/tnnienn/opencode-permission-mode.git
+npm install opencode-permission-mode
+```
+
+Then add it to your `opencode.json`:
+
+```json
+{
+  "plugin": ["opencode-permission-mode"]
+}
+```
+
+## Build from source
+
+```bash
+git clone https://github.com/Tnnienn/opencode-permission-mode.git
 cd opencode-permission-mode
 npm install
 npm run build
 ```
 
-Then add it to your `opencode.json`:
+Then reference the built path in `opencode.json`:
 
 ```json
 {

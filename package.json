@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Dynamically switch opencode's permission mode at runtime — free, cautious, locked, or ask — without touching config files.",
+  "author": "Antonio Fasanella <fasanella.antonio.sanfele@gmail.com>",
   "license": "MIT",
-  "keywords": ["opencode", "plugin", "permissions", "security"],
+  "keywords": ["opencode", "plugin", "permissions", "security", "mode"],
+  "main": "./dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -14,7 +16,8 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@opencode-ai/plugin": "^1.14.48"
@@ -25,6 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tnnienn/opencode-permission-mode"
+    "url": "git+https://github.com/tnnienn/opencode-permission-mode.git"
+  },
+  "homepage": "https://github.com/tnnienn/opencode-permission-mode#readme",
+  "bugs": {
+    "url": "https://github.com/tnnienn/opencode-permission-mode/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
